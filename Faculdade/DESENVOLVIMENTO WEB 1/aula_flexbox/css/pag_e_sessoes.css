@@ -1,0 +1,73 @@
+#page{
+    background-color: rgb(148, 122, 96);
+    width: 1980px;
+    height: 2000px;
+    margin: auto;
+    display: flex;
+        flex-direction: column;
+}
+#header{
+    background-color: rgb(255, 174, 103) ;
+    width: 1980px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sessao{
+    background-color: rgb(255, 212, 196);
+    width: 100%;
+    height: 25%;
+    display: flex;
+        flex-direction: row;
+}
+
+.grupo{
+    width: 100%;
+    height: 100%;
+    margin: 1%;
+    display: flex;
+        flex-direction: column;
+
+}
+
+.grupo1{
+    width: 100%;
+    height: 50%;
+    margin: 1%;
+    
+}
+
+.grupo2{
+    width: 100%;
+    height: 50%;
+    display:flex;
+    margin: 1%;
+    
+}
