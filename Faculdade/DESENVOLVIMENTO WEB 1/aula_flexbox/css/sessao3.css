@@ -1,0 +1,22 @@
+.gruposessao3g{
+    background-color: aliceblue;
+    width: 75%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+}
+
+.gruposessao3p{
+    background-color: rgb(177, 219, 255);
+    width: 25%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+}
+
+
+.boxsessao3{
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+}

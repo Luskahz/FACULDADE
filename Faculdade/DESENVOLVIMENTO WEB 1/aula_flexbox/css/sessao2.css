@@ -1,0 +1,12 @@
+.gruposessao2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        justify-content: space-around;
+}
+.boxsessao2{
+ background-color: chocolate;
+ width: 30%;
+ height: 100%;   
+
+}
