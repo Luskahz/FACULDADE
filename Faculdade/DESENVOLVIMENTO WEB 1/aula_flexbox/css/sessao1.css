@@ -1,18 +1,41 @@
-.box3{
-    background-color: chocolate;
+.gruposessao1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+}
+
+.gruposessao1a{
+    width: 100%;
+    height: 50%; 
+    display: flex;
+}
+
+.gruposessao1b{
+    width: 100%;
+    height: 50%;
+    display:flex;
+}
+
+
+
+
+
+.boxsessao11{
+    background-color:rgb(157, 113, 72);
     width: 100%;
     height: 100%;
 }
 
-.box4{
-    background-color: chocolate;
+.boxsessao12{
+    background-color: rgb(157, 113, 72);
     width: 50%;
     height: 100%;
 }
 
 
-.box5{
-background-color: chocolate;
+.boxsessao13{
+background-color: rgb(157, 113, 72);
 width: 100%;
 height: 100%;
 }
