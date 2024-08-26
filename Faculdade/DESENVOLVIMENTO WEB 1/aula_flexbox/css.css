@@ -1,0 +1,159 @@
+/* PAG E ESTRUTURA */
+
+body{
+    background-color: rgb(75, 64, 52);
+}
+
+#page{
+    width: auto;
+    height: 2000px;
+    margin: auto;
+    display: flex;
+        flex-direction: column;
+}
+
+/* ESTILO HEADER */
+#header{
+    background-color:rgb(105, 90, 75) ;
+    width: 100%;
+    height: 25%;
+    display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+}
+
+.sessao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+}
+
+/* ESTILO SESSÃO 1 */
+
+
+.boxheader1{
+    background-color: rgb(154, 120, 89);
+    width: 15%;
+    height: 75%;
+    margin: 1%;
+}
+.boxheader2{
+    background-color: rgb(154, 120, 89);
+    width: 40%;
+    height: 75%;
+    margin: 1% 
+}
+
+.gruposessao1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+}
+
+.gruposessao1a{
+    width: 100%;
+    height: 50%; 
+    display: flex;
+}
+
+.gruposessao1b{
+    width: 100%;
+    height: 50%;
+    display:flex;
+}
+
+.boxsessao11{
+    background-color:rgb(157, 113, 72);
+    width: 100%;
+    height: 100%;
+}
+
+.boxsessao12{
+    background-color: rgb(157, 113, 72);
+    width: 50%;
+    height: 100%;
+}
+
+
+.boxsessao13{
+background-color: rgb(157, 113, 72);
+width: 100%;
+height: 100%;
+}
+
+
+
+/* ESTILO SESSÃO 2 */
+
+.gruposessao2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        justify-content: space-around;
+}
+.boxsessao2{
+ background-color:rgb(157, 113, 72);
+ width: 30%;
+ height: 100%;   
+
+}
+
+
+
+
+
+/* ESTILO SESSÃO 3 */
+
+.gruposessao3g{
+    width: 75%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+}
+
+.gruposessao3p{
+    width: 25%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+}
+
+
+.boxsessao3{
+    background-color: rgb(157, 113, 72);
+    width: 100%;
+    height: 100%;
+}
+
+/* ESTILO SESSÃO 4 */
+
+.gruposessao41{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+
+}
+.gruposessao42{
+    width: 100%;
+    height: 100%;
+    display: flex;
+        flex-direction: column-reverse;
+
+}
+.boxsessao41{
+    background-color: rgb(157, 113, 72);
+    width: 100%;
+    height: 25%;
+
+}
+
+.boxsessao42{
+    background-color: rgb(157, 113, 72);
+    width: 100%;
+    height: 100%;
+}
