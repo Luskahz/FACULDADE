@@ -22,7 +22,8 @@ body{
     display: flex;
         flex-direction: row;
         justify-content:space-between;
-        gap: 100px;
+        align-items: center;
+        gap: 10px;
 }
 
 .sessao{
@@ -42,13 +43,13 @@ body{
     background-color: rgb(154, 120, 89);
     width: 250px;
     height: 50px;
-    margin: 10px 0 0 100px;
+    margin: 0 0 0 20px;
 }
 .boxheader2{
     background-color: rgb(154, 120, 89);
     width: 500px;
     height: 50px;
-    margin: 10px 100px 0 0;
+    margin: 0 20px 0 0
 }
 
 .gruposessao1{
