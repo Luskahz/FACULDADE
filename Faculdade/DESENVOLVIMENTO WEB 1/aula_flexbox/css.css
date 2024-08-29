@@ -2,11 +2,13 @@
 
 body{
     background-color: rgb(75, 64, 52);
+    display: flex;
+    flex-direction: column;
 }
 
 #page{
-    width: auto;
-    height: 2000px;
+    width: 1080px;
+    height: 1980px;
     margin: auto;
     display: flex;
         flex-direction: column;
@@ -15,19 +17,22 @@ body{
 /* ESTILO HEADER */
 #header{
     background-color:rgb(105, 90, 75) ;
-    width: 100%;
-    height: 25%;
+    width: auto;
+    height: 100px;
     display: flex;
         flex-direction: row;
         justify-content:space-between;
+        gap: 100px;
 }
 
 .sessao{
     width: 100%;
     height: 100%;
     display: flex;
+    gap: 5%;
         flex-direction: row;
         justify-content:space-around;
+        align-items: center;
 }
 
 /* ESTILO SESSÃO 1 */
@@ -35,20 +40,20 @@ body{
 
 .boxheader1{
     background-color: rgb(154, 120, 89);
-    width: 15%;
-    height: 75%;
-    margin: 1%;
+    width: 250px;
+    height: 50px;
+    margin: 10px 0 0 100px;
 }
 .boxheader2{
     background-color: rgb(154, 120, 89);
-    width: 40%;
-    height: 75%;
-    margin: 1% 
+    width: 500px;
+    height: 50px;
+    margin: 10px 100px 0 0;
 }
 
 .gruposessao1{
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
         flex-direction: column;
 }
@@ -69,6 +74,7 @@ body{
     background-color:rgb(157, 113, 72);
     width: 100%;
     height: 100%;
+    padding: 1%;
 }
 
 .boxsessao12{
@@ -90,7 +96,7 @@ height: 100%;
 
 .gruposessao2{
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
         justify-content: space-around;
 }
@@ -109,23 +115,22 @@ height: 100%;
 
 .gruposessao3g{
     width: 75%;
-    height: 100%;
-    display: flex;
-        flex-direction: column;
+    height: 90%;
+    display: grid;
+    align-items: center;
 }
 
 .gruposessao3p{
     width: 25%;
-    height: 100%;
-    display: flex;
-        flex-direction: column;
+    height: 90%;
+    display: grid;
+    align-items: center;
 }
-
 
 .boxsessao3{
     background-color: rgb(157, 113, 72);
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 /* ESTILO SESSÃO 4 */
