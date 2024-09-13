@@ -1,7 +1,7 @@
 body, header{
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;
 }
 
 body{
@@ -27,12 +27,60 @@ header .wrapper{
 }
 
 .wrapper nav {
-    background-color: rgb(45, 45, 45);
+
     width: 75%;
     height: 35%;
 }
 
-#logo h1{
+h1{
     color: #fff;
     margin: 0;
+    font-size: 25px;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo h1 spam{
+color: #ffcb5c;
+padding: 0;
+}
+
+.wrapper nav ul{
+    color: #fff;
+    display: flex;
+    flex direction: row;
+    list-style-type: none;
+    padding: 0;
+
+    justify-content: center;
+    
+}
+
+.wrapper nav{
+    align-items: center;
+    display: flex;
+
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 30px;
+    display: block;
+}
+
+header nav ul li a:hover{
+        color: #ffffff6c;
+        border-bottom: 3px solid #ffcb5c5d ;
+
+}
+    
+
+.active{
+    border-bottom: 3px solid #ffcb5c ;
+    
+
 }
