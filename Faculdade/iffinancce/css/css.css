@@ -51,7 +51,7 @@ padding: 0;
 .wrapper nav ul{
     color: #fff;
     display: flex;
-    flex direction: row;
+    flex-direction: row;
     list-style-type: none;
     padding: 0;
 
@@ -81,6 +81,11 @@ header nav ul li a:hover{
 
 .active{
     border-bottom: 3px solid #ffcb5c ;
-    
+    git 
 
+}
+#logo a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
 }
