@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quem Somos</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="./index.html">
+                        <img src="./img/finance-logo.svg" alt="Logo IF Finance">
+                        <h1><span>IF</span>Finance<h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./quem-somos.html">Quem Somos</a></li>
+                        <li><a href="./bolsas.html">Bolsas</a></li>
+                        <li><a href="./destaques.html">Destaques</a></li>
+                        <li><a class="active" href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <h1>Contatos</h1>
+
+                <form>
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" value="teste" placeholder="teste">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        <p>Em qual bolsa você tem mais investimentos?</p>
+                        <div>
+                            <input type="radio" id="ibovespa" name="bolsa" value="ibovespa" >
+                            <label for="ibovespa">Ibovespa</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="nasdaq" name="bolsa" value="nasdaq">
+                            <label for="nasdaq">Nasdaq</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="nyse" name="bolsa" value="nyse" checked>
+                            <label for="nyse">Nyse</label>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="checkbox" id="newsletter" name="news">
+                            <label for="newsletter">Deseja receber nossos informativos?</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">Aceita nosso termo de uso?</label>
+                        </div>
+                    </fieldset>
+                    <label for="estados">Qual seu Estado?</label>
+                    <select id="estados" name="estados">
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                    </select>
+
+                    <label for="comentario">Digite seu comentário:</label>
+                    <textarea id="comentario" name="comentario">    </textarea>
+
+                    <input type="submit" value="Enviar">
+                    <button type="button" value="Resetar">
+
+                </form>
+
+            </div>
+        </main>
+    </body>
+</html>

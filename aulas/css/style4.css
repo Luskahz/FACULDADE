@@ -1,0 +1,41 @@
+h2 {
+    color: #d47508;
+} 
+
+h5 {
+    color: #510404;
+    background-color: #a58fe0;
+}
+
+#page {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: #c67a10;
+}
+
+#container{
+    display: flex;
+}
+
+#sidebar {
+    width: 150px;
+    height: 600px;
+    background-color: #22b925;
+}
+
+#content {
+    width: 750px;
+    height: 500px;
+    background-color: #f061cc;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: #45904f;
+}
