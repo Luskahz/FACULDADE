@@ -197,3 +197,80 @@ div.blockGrid fieldset{
     border-color: #c77d22;
     color: #c77d22;
 }
+
+div.wrapper button.addbutton:hover{
+    background-color: #f19e39b4;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+div.wrapper button.addbutton{
+    background-color: #F19E39;
+    border-radius: 20px;    
+    width: 100px;
+    height: 30px;
+    border: none;
+}
+
+div.wrapper div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal{
+    background-color: #0000007a;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#modal div {
+    width: 1000px;
+    height: 600px;
+    background-color: #3d3d3d;
+    border-radius: 30px;
+    display: flex;
+    justify-content:start;
+    align-items: start;
+}
+
+#modal div div.titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#modal div div.titulo h1{
+    color: #808080;
+    margin-left: 30px;
+}
+
+
+div.titulo button.exit{
+    color: #808080;
+    margin-right: 20px;
+    border: none;
+    background-color: #fff0ff00;
+    font-size:large;
+    width: 50px;
+    height: 50px;
+}
+div.titulo button.exit:hover{
+    color: #8080804b;
+    margin-right: 20px;
+    border: none;
+    background-color: #00000000;
+    font-size:large;
+    width: 50px;
+    height: 50px;
+}

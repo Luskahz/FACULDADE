@@ -1,19 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IFFinance</title>
+        <link rel="stylesheet" href="../js/style.css">
         
-    </header>
-    <div class="firts">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="./index.html">
+                        <img src="./img/finance-logo.svg" alt="Logo IF Finance">
+                        <h1><span>IF</span>Finance<h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./quem-somos.html">Quem Somos</a></li>
+                        <li><a href="./bolsas.html">Bolsas</a></li>
+                        <li><a href="./destaques.html">Destaques</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <h1>Home</h1>
+            </div>
+
+
+            <div class="blockGrid"> 
+                <div id="blockColor">
+                </div>
+                <div class="inputs">
+                    <input type="text" value="#" id="COR">
+                    <button onclick="Trocar()">Aplicar cor</button>
+                    <button onclick="limparPaleta ()">apagar Paleta</button>
+                </div>
+                <fieldset>
+                    <legend>Cores Recentes</legend>
+                    <div id="Paleta">
+                        <div id="paletaCaixa">
+                            <div id="paleta1"></div>
+                            <div id="paleta2"></div>
+                            <div id="paleta3"></div>
+                            <div id="paleta4"></div>
+                            <div id="paleta5"></div>
+
+                        </div>
+                    </div>
+                </fieldset>
+            
+            </div>
         
-    </div>
+           
+        </main>
+    </body>
+    <script>
+        const paleta = []
+        const p1 = document.getElementById('paleta1')
+        const p2 = document.getElementById('paleta2')
+        const p3 = document.getElementById('paleta3')
+        const p4 = document.getElementById('paleta4')
+        const p5 = document.getElementById('paleta5')
+        var Caixapaleta = document.getElementById('paletaCaixa')
+        let cont = 0
+        
+        const Trocar = () => {
+            const block = document.getElementById('blockColor') //peguei o id da div block color
+            const input = document.getElementById('COR') //Peguei o id do input cor, onde o usuario vai inserir a cor
+           block.style.background = input.value
+            paleta.push(input.value)
+            console.log(paleta)
+            armazenar()
+            COR.value = "#"
+        }
 
+        const armazenar = () => {
+            if (paleta.length ==1){ p1.style.background = paleta[0]; cont++; console.log(cont)}
+            if (paleta.length ==2){ p2.style.background = paleta[1]; cont++;console.log(cont)}
+            if (paleta.length ==3){ p3.style.background = paleta[2]; cont++;console.log(cont)}
+            if (paleta.length ==4){ p4.style.background = paleta[3]; cont++;console.log(cont)}
+            if (paleta.length ==5){ p5.style.background = paleta[4]; cont++;console.log(cont)}
+            if (paleta.length ==6){Caixapaleta.innerHTML += `<div id="paleta${cont++}"></div>`}
+        }
 
-
-</body>
+        const limparPaleta = () => {
+            paleta = []
+            p1.style.background = ''
+            p2.style.background = ''
+            p3.style.background = ''
+            p4.style.background = ''
+            p5.style.background = ''
+        }
+        Caixapaleta.selec
+    </script>
+    <script></script>
 </html>

@@ -29,75 +29,32 @@
         </header>
         <main>
             <div class="wrapper">
-                <h1>Home</h1>
-            </div>
-
-
-            <div class="blockGrid"> 
-                <div id="blockColor">
+                <div> 
+                    <h1>Home</h1>
+                    <button class="addbutton" onclick="adicionar()">+ Adicionar</button>
                 </div>
-                <div class="inputs">
-                    <input type="text" value="#" id="COR">
-                    <button onclick="Trocar()">Aplicar cor</button>
-                    <button onclick="limparPaleta ()">apagar Paleta</button>
-                </div>
-                <fieldset>
-                    <legend>Cores Recentes</legend>
-                    <div id="Paleta">
-                        <div id="paletaCaixa">
-                            <div id="paleta1"></div>
-                            <div id="paleta2"></div>
-                            <div id="paleta3"></div>
-                            <div id="paleta4"></div>
-                            <div id="paleta5"></div>
-
-                        </div>
+               <div id="modal">
+                <div>
+                    <div class="titulo">
+                        <h1>Adicionar Ação</h1>
+                        <button class="exit" onclick="fechar()">X</button>
                     </div>
-                </fieldset>
-            
+                </div>
+
+               </div>
             </div>
-        
-           
         </main>
+        <script>
+            const adicionar = () => {
+            const modal = document.getElementById('modal')
+            modal.style.display = "flex"  
+            }
+            const fechar = () => {
+               const modal = document.getElementById('modal')
+               modal.style.display = "none"   
+                
+            }
+        </script>
+
     </body>
-    <script>
-        const paleta = []
-        const p1 = document.getElementById('paleta1')
-        const p2 = document.getElementById('paleta2')
-        const p3 = document.getElementById('paleta3')
-        const p4 = document.getElementById('paleta4')
-        const p5 = document.getElementById('paleta5')
-        var Caixapaleta = document.getElementById('paletaCaixa')
-        let cont = 0
-        
-        const Trocar = () => {
-            const block = document.getElementById('blockColor') //peguei o id da div block color
-            const input = document.getElementById('COR') //Peguei o id do input cor, onde o usuario vai inserir a cor
-           block.style.background = input.value
-            paleta.push(input.value)
-            console.log(paleta)
-            armazenar()
-            COR.value = "#"
-        }
-
-        const armazenar = () => {
-            if (paleta.length ==1){ p1.style.background = paleta[0]; cont++; console.log(cont)}
-            if (paleta.length ==2){ p2.style.background = paleta[1]; cont++;console.log(cont)}
-            if (paleta.length ==3){ p3.style.background = paleta[2]; cont++;console.log(cont)}
-            if (paleta.length ==4){ p4.style.background = paleta[3]; cont++;console.log(cont)}
-            if (paleta.length ==5){ p5.style.background = paleta[4]; cont++;console.log(cont)}
-            if (paleta.length ==6){Caixapaleta.innerHTML += `<div id="paleta${cont++}"></div>`}
-        }
-
-        const limparPaleta = () => {
-            paleta = []
-            p1.style.background = ''
-            p2.style.background = ''
-            p3.style.background = ''
-            p4.style.background = ''
-            p5.style.background = ''
-        }
-        Caixapaleta.selec
-    </script>
-    <script></script>
 </html>
