@@ -33,6 +33,7 @@
                     <h1>Home</h1>
                     <button class="addbutton" onclick="adicionar()">+ Adicionar</button>
                 </div>
+            <div onclick="fechar(event)">
                <div id="modal">
                 <div>
                     <div class="titulo">
@@ -40,6 +41,7 @@
                         <button class="exit" onclick="fechar()">X</button>
                     </div>
                 </div>
+            </div>
 
                </div>
             </div>
@@ -49,9 +51,22 @@
             const modal = document.getElementById('modal')
             modal.style.display = "flex"  
             }
-            const fechar = () => {
-               const modal = document.getElementById('modal')
-               modal.style.display = "none"   
+
+            
+            const fechar = (event) => {
+                const modal = document.getElementById('modal')
+                if( event === undefined){
+                    console.log(event)
+                    modal.style.display = "none"  
+                }
+                if(event.target.id === 'modal'){
+                    console.log(event)
+                    modal.style.display = "none"  
+
+                } 
+
+
+ 
                 
             }
         </script>
