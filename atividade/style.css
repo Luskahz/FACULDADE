@@ -1,0 +1,33 @@
+body{
+    background-color: #1f1f1f;
+    display: flex;   
+
+}
+div#wrapper{
+width: 98%;
+height: 1000px;
+margin: 0 auto;
+background-color: #2b2929;
+display: flex;
+}
+div#templateGaleria{
+    width: 800px;
+    height: 900px;
+    background-color: rgb(78, 78, 78);
+    margin-left: 100px;
+}
+
+div#lego{
+    width: 500px;
+    height: 900px;
+    background-color: rgb(78, 78, 78);
+    margin-left: 200px;
+    
+}
+
+
+div.peça{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(78, 78, 78);
+}
