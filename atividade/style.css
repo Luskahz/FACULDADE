@@ -15,6 +15,10 @@ div#templateGaleria{
     height: 900px;
     background-color: rgb(78, 78, 78);
     margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 div#lego{
@@ -26,8 +30,134 @@ div#lego{
 }
 
 
-div.peça{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(78, 78, 78);
+#templateGaleria header{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+#coletor{
+    width: 75%;
+    height: 75%;
+    border: none;
+    background-color: #656565;
+    color: #fff;
+    border: 2px solid #272727;
+    border-radius: 5px; 
+}
+#coletor:hover{
+    width: 75%;
+    height: 75%;
+    border: none;
+    border: 2px solid #272727;
+    background-color: #494949;
+    color: #fff;
+    border-radius: 5px; 
+}
+
+
+
+#parte{
+    width: 15%;
+    height: 75%;
+    border: none;
+    background-color: #656565;
+    color: #fff;
+    border: 2px solid #272727;
+    border-radius: 5px;
+}
+#parte:hover{
+    width: 15%;
+    height: 75%;
+    border: none;
+    background-color: #494949;
+    color: #fff;
+    border: 2px solid #272727;
+    border-radius: 5px;
+}
+
+#enviar{
+    width: 15%;
+    height: 75%;
+    border: none;
+    background-color: #656565;
+    color: #fff;
+    border: 2px solid #272727;
+
+   
+}
+#enviar:hover{
+    width: 15%;
+    height: 75%;
+    border: none;
+    background-color: #494949;
+    color: #fff;
+    border: 2px solid #272727;
+    border: #000;
+   
+}
+#templateGaleria  main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#templateGaleria main div {
+    width: 100%;
+    height: 30%;
+    background-color: #1f1f1f;
+}
+#lego{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#lego img{
+    width: 90%;
+    height: 30%;
+    background-color: #1f1f1f;
+    
+}
+
+main img.peca{
+    width: 15%;
+    height: 35%;
+    display: flex;
+}
+main img.peca:hover{
+    width: 15%;
+    height: 35%;
+    display: flex;
+    opacity: 0.5;
+}
+
+
+div#galeriaCabeca{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+div#galeriaTronco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+div#galeriaPerna{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    
 }

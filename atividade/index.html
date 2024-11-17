@@ -8,17 +8,36 @@
 </head>
 <body>
     <div id="wrapper">
-        <div id="templateGaleria"></div>
-        <div id="lego">
-            <div class="peça"></div>
-            <div class="peça"></div>
-            <div class="peça"></div>
+        <div id="templateGaleria">
+            <header>
+                <input type="text" id="coletor">
+                <select name="direcao" id="parte">
+                    <option value="cabeca">CABEÇA</option>
+                    <option value="tronco">TRONCO</option>
+                    <option value="perna">PERNA</option>
+                </select>
+                <button id="enviar" onclick="aplicar()">ENVIAR
+                </button>
+  
+            </header>
 
+            <main>
+                <div id="galeriaCabeca" ></div>
+                <div id="galeriaTronco"></div>
+                <div id="galeriaPerna"></div>
+            </main>
+
+        </div>
+        <div id="lego">
+            <img src="" alt="" id="pecaCabeca">
+            <img src="" alt="" id="pecaTronco">
+            <img src="" alt="" id="pecaPerna">
 
         </div>
 
     </div>
-
+<script src="./js/main.js">
+</script>   
     
 </body>
 </html>
