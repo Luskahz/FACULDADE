@@ -139,8 +139,7 @@ select{
     width: fit-content;
 }
 
-input[type=submit]{
-    width: 50%;
+input[type=submit], button{
     background-color: #F19E39;
     border-radius: 20px;
     padding: 10px 20px;
@@ -149,128 +148,134 @@ input[type=submit]{
     cursor: pointer;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, button:hover{
     background-color: #c77d22;
 }
 
-
-
-div.blockGrid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-}
-
-
-#blockColor{
-    background-color: #000;
-    width: 1000px;
-    height: 100px;
-    margin: 0 auto;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#paletaCaixa {
-    display: flex;
-    flex-direction: row;
-    width: 500px;
-    justify-content: space-around;
-    
-
-}
-
-#paletaCaixa div { 
-    background: #000;
-    width: 100px;
-    height: 50px;
-    margin: 1px;
-}
-
-
-
-
-div.blockGrid fieldset{
-    border-color: #c77d22;
-    color: #c77d22;
-}
-
-div.wrapper button.addbutton:hover{
-    background-color: #f19e39b4;
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
-    border: none;
-}
-div.wrapper button.addbutton{
-    background-color: #F19E39;
-    border-radius: 20px;    
-    width: 100px;
-    height: 30px;
-    border: none;
-}
-
-div.wrapper div{
+.flex-bt{
     display: flex;
     justify-content: space-between;
+}
+
+.align-center{
     align-items: center;
 }
 
-#modal{
-    background-color: #0000007a;
+.modal{
+    background: #1e1e1eaf;
     position: absolute;
     top: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
+    display: none;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
-#modal div {
-    width: 1000px;
-    height: 600px;
-    background-color: #3d3d3d;
-    border-radius: 30px;
-    display: flex;
-    justify-content:start;
-    align-items: start;
+.modal main{
+    background: #2d2d2d;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.modal main header{
+    background: none;
+    height: auto;
+    margin: 0 0 16px 0;
 }
 
-#modal div div.titulo {
+.modal main header h1{ 
+    margin: 0;
+}
+
+.modal main header button{
+    background: none;
+    color: #FFF;
+}
+
+.modal main header button:hover{
+    background: #000;
+}
+
+.modal main form{
     width: 100%;
-    height: 10%;
+}
+
+.card-ticker{
+    width: 300px;
+    background: #2d2d2d;
+    border-radius: 16px;
+    padding: 14px;
+    position: relative;
+}
+
+.card-ticker header {
     display: flex;
-    justify-content: start;
     align-items: center;
+    gap: 14px;
+    height: auto;
+    background: none;
+}
+
+.card-ticker header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.card-ticker header h4{
+    margin: 0;
+}
+
+.card-ticker header span{
+    margin: 0 0 0 auto;
+}
+
+.card-ticker main p {
+    color: #868686;
+    margin: 6px 0;
+}
+
+.card-ticker main p span{
+    font-size: 40px;
+}
+
+.card-ticker main p span span{
+    font-size: 20px;
+}
+
+.card-ticker footer{
+    display: flex;
     justify-content: space-between;
 }
 
-#modal div div.titulo h1{
-    color: #808080;
-    margin-left: 30px;
+.card-ticker footer p{
+    color: #868686;
+    margin: 6px 0 0 0;
 }
 
-
-div.titulo button.exit{
-    color: #808080;
-    margin-right: 20px;
-    border: none;
-    background-color: #fff0ff00;
-    font-size:large;
-    width: 50px;
-    height: 50px;
+.card-ticker footer p span{
+    color: #e5e5e5;
+    font-size: 18px;
 }
-div.titulo button.exit:hover{
-    color: #8080804b;
-    margin-right: 20px;
-    border: none;
-    background-color: #00000000;
-    font-size:large;
-    width: 50px;
-    height: 50px;
+
+#card-list{
+    display: flex;
+    gap: 20px;
+}
+
+.card-ticker .card-options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000be;
+    border-radius: 16px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }

@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>IFFinance</title>
         <link rel="stylesheet" href="./css/style.css">
-        
     </head>
     <body>
         <header>
@@ -29,47 +28,37 @@
         </header>
         <main>
             <div class="wrapper">
-                <div> 
+                <div class="flex-bt align-center">
                     <h1>Home</h1>
-                    <button class="addbutton" onclick="adicionar()">+ Adicionar</button>
+                    <button style="height: 40px;" onclick="openModal()">+ Adicionar</button>
                 </div>
-            <div onclick="fechar(event)">
-               <div id="modal">
-                <div>
-                    <div class="titulo">
-                        <h1>Adicionar Ação</h1>
-                        <button class="exit" onclick="fechar()">X</button>
-                    </div>
+                <div id="card-list">
+                    
                 </div>
-            </div>
-
-               </div>
             </div>
         </main>
-        <script>
-            const adicionar = () => {
-            const modal = document.getElementById('modal')
-            modal.style.display = "flex"  
-            }
+        <div class="modal" onclick="closeModal(event)">
+            <main>
+                <header class="flex-bt align-center">
+                    <h1>Adicionar Ação</h1>
+                    <button onclick="closeModal()">⨉</button>
+                </header>
+                <form onsubmit="addTicker(event)">
+                    <label for="urlLogo">URL Logo:</label>
+                    <input type="text" id="urlLogo" name="urlLogo">
+                    <label for="nameCompany">Nome da Empresa:</label>
+                    <input type="text" id="nameCompany" name="nameCompany">
+                    <label for="ticker">Símbolo:</label>
+                    <input type="text" id="ticker" name="ticker">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="text" id="quantity" name="quantity">
+                    <label for="closedValue">Valor da Ação:</label>
+                    <input type="text" id="closedValue" name="closedValue">
 
-            
-            const fechar = (event) => {
-                const modal = document.getElementById('modal')
-                if( event === undefined){
-                    console.log(event)
-                    modal.style.display = "none"  
-                }
-                if(event.target.id === 'modal'){
-                    console.log(event)
-                    modal.style.display = "none"  
-
-                } 
-
-
- 
-                
-            }
-        </script>
-
+                    <input type="submit" value="Adicionar" style="width: 50%;">
+                </form>
+            </main>
+        </div>
     </body>
+    <script src="./js/main.js"></script>
 </html>
