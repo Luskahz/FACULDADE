@@ -14,7 +14,7 @@
                         <img src="./img/finance-logo.svg" alt="Logo IF Finance">
                         <h1><span>IF</span>Finance<h1>
                     </a>
-                </div>  
+                </div>
                 <nav>
                     <ul>
                         <li><a class="active" href="./index.html">Home</a></li>
@@ -37,13 +37,11 @@
                 </div>
             </div>
         </main>
-
-
-        <div class="modal" id="modal-add-ticker" onclick="closeModal(event)">
+        <div class="modal" id="modal-add-ticker" onclick="closeModal(event, '#modal-add-ticker')">
             <main>
                 <header class="flex-bt align-center">
                     <h1>Adicionar Ação</h1>
-                    <button onclick="closeModal()">⨉</button>
+                    <button onclick="closeModal(null, '#modal-add-ticker')">⨉</button>
                 </header>
                 <form onsubmit="addTicker(event)">
                     <label for="urlLogo">URL Logo:</label>
@@ -61,16 +59,13 @@
                 </form>
             </main>
         </div>
-
-
-
-        <div class="modal" id="modal-edit-ticker" onclick="closeModal(event)">
+        <div class="modal" id="modal-edit-ticker" onclick="closeModal(event, '#modal-edit-ticker')">
             <main>
                 <header class="flex-bt align-center">
-                    <h1>Adicionar Ação</h1>
-                    <button onclick="closeModal()">⨉</button>
+                    <h1>Editar Ação</h1>
+                    <button onclick="closeModal(null, '#modal-edit-ticker')">⨉</button>
                 </header>
-                <form onsubmit="editTicker(event)">
+                <form onsubmit="updateTicker(event)">
                     <label for="eUrlLogo">URL Logo:</label>
                     <input type="text" id="eUrlLogo" name="urlLogo">
                     <label for="eNameCompany">Nome da Empresa:</label>
